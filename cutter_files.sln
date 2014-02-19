@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cutter_files", "cutter_files\cutter_files.csproj", "{A1296980-0B1A-4AEC-B8EB-A63A40B408B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1296980-0B1A-4AEC-B8EB-A63A40B408B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1296980-0B1A-4AEC-B8EB-A63A40B408B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1296980-0B1A-4AEC-B8EB-A63A40B408B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1296980-0B1A-4AEC-B8EB-A63A40B408B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

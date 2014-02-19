@@ -1,0 +1,6 @@
+D:\cutter_files\cutter_files\bin\Debug\cutter_files.exe.config
+D:\cutter_files\cutter_files\bin\Debug\cutter_files.exe
+D:\cutter_files\cutter_files\bin\Debug\cutter_files.pdb
+D:\cutter_files\cutter_files\obj\Debug\cutter_files.csprojResolveAssemblyReference.cache
+D:\cutter_files\cutter_files\obj\Debug\cutter_files.exe
+D:\cutter_files\cutter_files\obj\Debug\cutter_files.pdb
