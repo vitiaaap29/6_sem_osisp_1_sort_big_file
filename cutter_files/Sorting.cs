@@ -21,7 +21,6 @@ namespace cutter_files
 
         private static long[] FileToArray(string filePath, int countOfItems)
         {
-            Console.WriteLine("FileToArray started");
             long[] array = new long[countOfItems];
             string line; 
             int index = 0;
@@ -29,29 +28,21 @@ namespace cutter_files
             while ((line = file.ReadLine()) != null) 
             { 
                 array[index] = Convert.ToInt64(line);                
-                /*if((index % 100000) == 0)
-                {  
-                     System.Console.WriteLine(array[index]);
-                }*/
                 index++;  
             }
             file.Close();
-            Console.WriteLine("FileToArray completed");
             return array;
         }
 
         private static long[] SortArray(long[] array)
         {
-            Console.WriteLine("SortArray started:)");
             Array.Sort(array);
-            Console.WriteLine("SortArray completed");
             return array;            
         }
 
         private static void WriteFile(long[] array, string filePath)
         {
             //удаляем исходный файл
-            Console.WriteLine("WriteFile started");
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
@@ -64,7 +55,6 @@ namespace cutter_files
                 file.WriteLine(String.Format("{0, 18}", tempValue));
             }
             file.Close();
-            Console.WriteLine("WriteFile completed");
         }
     }
 }

@@ -11,12 +11,10 @@ namespace cutter_files
     {
         public static void Sort(string fileName, int maxSizePart, int lengthLine)
         {
-
             DateTime beforeDivision = DateTime.Now;
             //Делим на кусочки
             Console.WriteLine("Division file...");
             Dictionary<string, int> filesAndSizes = Cutter.DivisionFile(fileName, maxSizePart, lengthLine);
-
             DateTime afterDivision = DateTime.Now;
 
             DateTime beforeSort = DateTime.Now;
@@ -26,14 +24,13 @@ namespace cutter_files
             {
                 Sorting.SortFile(fileSizePair.Key, fileSizePair.Value / lengthLine);
             }
-
-            DateTime beforeMerge = DateTime.Now;
+            DateTime afterSort = DateTime.Now;
 
             File.Delete(fileName);
 
+            DateTime beforeMerge = DateTime.Now;
             Console.WriteLine("Merge files...");
             Cutter.MergeFiles(filesAndSizes.Keys.ToArray(), fileName);
-
             DateTime afterMerge = DateTime.Now;
 
             //Удаляем кусочки
@@ -49,7 +46,7 @@ namespace cutter_files
             Console.WriteLine("beforeDivision => " + beforeDivision);
             Console.WriteLine("afterDivision => " + afterDivision);
             Console.WriteLine("beforeSort => " + beforeSort);
-            Console.WriteLine("afterSort => " + beforeSort);
+            Console.WriteLine("afterSort => " + afterSort);
             Console.WriteLine("beforeMerge => " + beforeMerge);
             Console.WriteLine("afterMerge => " + afterMerge);
         }
